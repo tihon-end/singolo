@@ -1,0 +1,253 @@
+.logo{
+
+font-size: 25px;
+line-height: 6px;
+color: #ffffff;
+font-family: "Lato", sans-serif;
+font-weight: 700;
+text-align: left;
+text-transform: uppercase;
+margin-right: 453px;
+margin-left: 40px;
+
+}
+.header{
+min-height: 91px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+height: 89px;
+background-color: #2d303a;
+margin: 0 auto;
+/* max-width: 1020px; */
+}
+li {
+    list-style: none;
+    color: #ffffff;
+    display: inline-block;
+    margin-right: 31px;
+    text-transform: uppercase;
+    font-size: 12px;
+    cursor: pointer;    
+}
+
+li:hover{
+    color:red;
+}
+li + li:before {
+    content: "\2022";
+    color: #494e62;
+    padding: 7.5px;
+  }
+
+h1 :first-child {
+    color: #f06c64;
+}
+
+
+.slider {
+    position: relative;
+    min-height: 600px;
+    background: linear-gradient(0deg, rgb(234, 103, 107) 6px, rgb(240, 109, 102) 6px);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    /* max-width: 1020px; */
+}
+
+.slider-button {
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    width: 16px;
+    height: 27px;
+    background-color: transparent;
+    margin-bottom: 12px;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.slider-button:focus {
+    outline: none;
+}
+
+.slider-button:hover {
+    background-color: lightcoral;
+}
+
+.slider-button-left {
+    background-image: url('assets/chev.png');
+    margin-left: 25px;
+
+}
+
+.slider-button-right {
+    background-image: url('assets/chev (1).png');
+    margin-right: 23px;
+}
+
+
+.phone-vertical {
+    right: 35px;
+    bottom: 4px;
+    position: relative;
+}
+
+.phone-horizontal {
+    left: 34px;
+    bottom: 126px;
+    position: relative;
+}
+
+
+.info {
+    margin-left: 36px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 1020px;
+
+}
+
+.info-element {
+    position: relative;
+    width: 220px;
+    padding-left: 84px;
+    margin-right: 15px;
+    margin-bottom: 21px;
+}
+
+.info-element::before {
+    position: absolute;
+    content: '';
+    width: 55px;
+    height: 55px;
+    background-position: center;
+    background-size: 32px;
+    left: 5px;
+    top: 1px;
+    background-repeat: no-repeat;
+    border: 2px solid #666d89;
+    border-radius: 50%;
+}
+
+.info-h {
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    line-height: 17px;
+    font-weight: 900;
+    color: #666d89;
+    margin-top: 0;
+    margin-bottom: 0;
+    overflow: hidden;
+    height: 19px;
+    width: 160px;
+}
+
+.info-text {
+    font-family: 'Lato', sans-serif;
+    font-size: 12px;
+    line-height: 21px;
+    font-weight: 400;
+    color: #767e9e;
+    text-align: justify;
+    margin-top: 8px;
+    margin-bottom: 13px;
+    width: 220px;
+    height: 62px;
+    overflow: hidden;
+}
+
+.info-element-pen::before {
+    background-image: url('assets/pen.png');
+    background-size: 32px;
+
+}
+.info-element-bulb::before {
+    background-image: url('assets/bulb.png');
+    background-size: 22px;
+    background-position: 17px 11px;
+}
+
+.info-element-heart::before {
+    background-image: url('assets/heart.png');
+    background-size: 32px;
+    left: 6px;
+
+}
+
+.info-element-heart h2{
+    margin-left: 3px;
+}
+
+.info-element-heart p {
+    margin-left: 1px;
+}
+
+.info-element-phone2::before {
+    background-image: url('assets/phone.png');
+    background-size: 22px;
+
+}
+
+.info-element-bubble::before {
+    background-image: url('assets/bubble.png');
+    background-size: 32px;
+}
+
+.info-element-star::before {
+    background-image: url('assets/star.png');
+    background-size: 32px;
+    left: 6px;
+}
+
+.info-element-star h2 {
+    margin-left: 3px;
+}
+
+.info-element-star p {
+    margin-left: 1px;
+}
+
+
+.our-services {
+    min-height: 431px;
+    padding-top: 69px;
+    background: linear-gradient(0deg, #fff 6px, #f2f2f2 6px);
+    font-family: 'LatoWeb', Arial, sans-serif;
+}
+
+.our-services-h2 {
+    font-family: 'LatoWebBlack', sans-serif;
+    font-size: 30px;
+    line-height: 17px;
+    font-weight: 900;
+    color: #666d89;
+    margin-top: 3px;
+    margin-bottom: 24px;
+    margin-left: 40px;
+}
+
+.our-services-text {
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 300;
+    color: #767e9e;
+    margin-bottom: 46px;
+    margin-left: 40px;
+    padding-right: 25px;
+    text-align: justify;
+    max-width: 940px;
+}
+
+.point{
+    color:black;
+    
+}
