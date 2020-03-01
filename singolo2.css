@@ -1,0 +1,120 @@
+.content-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start; 
+    background-color: #2d303a;
+    padding-top: 47px;
+    border-bottom: 6px solid #323746;
+}
+.portfolio-container{
+   /* max-width: 940px; */
+   width: 940px;
+    margin: 15px;
+    margin: 0 auto;
+}
+.portfolio-title{
+    font-size: 30px;
+    line-height: normal;
+    font-weight: 900;
+    letter-spacing: 0.3px;
+    color: #666d89;
+    line-height: 18px;
+    font-family: 'Lato';
+}
+.portfolio-text{
+    font-size: 18px;
+    line-height: normal;
+    color: #666d89;
+    letter-spacing: 0.3px;
+    padding-top: 10px;
+    letter-spacing: -0.34px;
+    font-family: "Lato";
+}
+.portfolio-button{
+    color: #767e9e;
+    border: 1px solid #666d89;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: inherit;
+    line-height: 18px;
+    font-size: 12px;
+    margin-right: 7px;
+     font-weight: 550;
+}
+button:hover{
+    color: wheat;
+}
+.portfolio-item{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 19px;
+    padding-bottom: 47px;
+}
+.portfolio-image {
+    width: 220px;
+    height: 187px;
+    margin-bottom: 20px;
+}
+.portfolio-image:nth-child(n+13) {
+    display: none;
+}
+.about{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+    flex-wrap: wrap;
+    padding-top: 46px;
+    padding-bottom: 65px;
+    background-color: #f2f2f2;
+    border-bottom: 6px solid #ffffff;
+}
+.about-text{
+    color: #767e9e;
+    font-size: 18px;
+    line-height: normal;
+    font-weight: 300;
+    letter-spacing: -0.34px;
+    text-align: justify;
+    margin-top: 26px;
+    font-family: "Lato";
+}
+.persons{
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between; 
+    margin-top: 43px;
+}
+.person{
+    display: flex;
+    flex-direction: column; 
+    justify-content: flex-start; 
+    width: 300px;
+}
+.person-name{
+    font-size: 18px;
+line-height: 18px;
+color: #666d89;
+font-family: "Lato";
+font-weight: 900;
+text-align: left;
+}
+.person-text{
+     color: #767e9e;
+    font-size: 12px;
+    line-height: 22px;
+    margin-top: -6px;
+    text-align: justify;
+    font-weight: 900;
+    font-family: "Lato";
+}
+.contact-img {
+    margin-right: 6px;
+    cursor: pointer;
+    /* background-repeat: no-repeat; */
+    /* border: 0px solid #666d89; */
+    /* border-radius: 50%; */
+}
+
+
