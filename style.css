@@ -12,7 +12,8 @@ body{
     height: 89px;
     background-color: #2d303a;
     margin: 0 auto;
-    
+    position: sticky;
+    top: 0;
 }
 .header{
     width: 960px;
@@ -48,12 +49,21 @@ line-height: 6px;
 color: #f06c64;
 font-family: "Lato" sans-serif;
 font-weight: 700;
-
     }
-li:hover{
-    color:red;
-}
-li + li:before {
+
+    li.active{
+        color: red;
+    }
+
+    li:not(active):hover{
+       color: red;
+    }
+   
+
+/* li:hover{
+    color:red; 
+} */
+li+li:before {
     content: "\2022";
     color: #494e62;
     padding: 7.5px;
@@ -115,12 +125,15 @@ h1 :first-child {
         right: 35px;
         bottom: 4px;
         position: relative;
+        
     }
     
+
     .phone-horizontal {
         left: 34px;
         bottom: 126px;
         position: relative;
+        
     }
     .info {
         margin-left: 36px;
@@ -237,6 +250,7 @@ h1 :first-child {
         padding-top: 69px;
         background: linear-gradient(0deg, #fff 6px, #f2f2f2 6px);
         font-family: 'LatoWeb', Arial, sans-serif;
+        
 
     }
     
@@ -281,6 +295,7 @@ h1 :first-child {
        width: 940px;
         margin: 15px;
         margin: 0 auto;
+        
     }
     .portfolio-title{
         font-size: 30px;
@@ -461,6 +476,7 @@ h1 :first-child {
     border: none;
     border-radius: 5px;
     outline: none;
+    cursor: pointer;
     }
     
     .contact-title{
@@ -585,4 +601,135 @@ h1 :first-child {
     }
 
 
-  
+  #message-block{
+position: absolute;
+width: 100vw;
+height: 100vh;
+top: 0;
+left: 0;
+background: #0008;
+  }
+  #message-block.hidden{
+      display: none;
+  }
+  #message{
+      top: 50%;
+      left: 50%;
+      position: absolute;
+      border: 2px solid black;
+      text-align: center;
+  }
+
+
+
+/* slider */
+
+.item-slider{
+    display: none;
+    animation: 0.5s ease-in-out;
+}
+
+.to-left{
+    animation-name: left;
+}
+
+.to-right{
+    animation-name: right;
+    animation-direction: reverse;
+
+}
+.from-left{
+    animation-name: left;
+    animation-direction: reverse;
+}
+.from-right{
+    animation-name: right;
+}
+
+
+
+.active, .next{
+    display: inline-block;
+}
+
+
+@keyframes left{
+    from{
+        left:0;
+    }
+    to{
+        left: 100%;
+    }
+}
+
+@keyframes right{
+    from{
+        left: 100%;
+    }
+    to{
+        left: 0;
+    }
+}
+
+
+/* modal */
+
+
+
+html{
+    scroll-behavior: smooth;
+    
+}
+
+
+#modal-form {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* z-index: 100; */
+    background: #0008;
+}
+
+#modal-form > .message {
+    position: absolute;
+    top: 180px;
+    left: calc(50vw - 150px);
+    width: 300px;
+    background-color: #f2f2f2;
+    color: #666d89;
+    padding: 5px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.modal-header {
+    font-size: 18px;
+    font-weight: 700;
+    
+    margin-bottom: 5px;
+}
+
+.modal-text {
+    text-align: left;
+    max-height: 115px;
+    overflow: hidden;
+}
+
+.modal-btn {
+    border-radius: 10px;
+    border: 1px solid #f48c8f;
+    width: 50px;
+    margin-top: 10px;
+}
+
+.modal-hidden {
+    display: none;
+}
+
+
+
+.portfolio-select {
+    border: 5px solid #F06C64;
+}

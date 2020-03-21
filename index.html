@@ -8,25 +8,30 @@
     <title>Singolo</title>
 </head>
 <body>
-    <header class="header-container">
+    <header class="header-container" >
         <a class="logo"><h1>singolo<span>*</span></h1></a>
-        <ul class="header-ul">
-            <li>home</li>
-            <li>services</li>
-            <li>portfolio</li>
-            <li>about</li>
-            <li>contact</li>
+        <ul class="header-ul" id="header-ul">
+         <a href="#">  <li class="active">home</li></a> 
+           <a href="#services"> <li>services</li></a>
+          <a href="#portfolio">  <li> portfolio</li></a>
+          <a href="#about">  <li>about</li></a>
+           <a href="#contact"> <li>contact</li></a>
         </ul>
     </header>
     <div class="slider">
-        <button class="slider-button slider-button-left"></button>
-        <div>
-        <img src="assets/iPhone Vertical.png" alt="рисунок iPhone" class="phone-vertical">
-        <img src="assets/iPhone Horizontal.png" alt="рисунок iPhone" class="phone-horizontal">
+        <button class="slider-button slider-button-left " id="button-left"></button>
+        <div class="item-slider active" >
+        <img src="assets/iPhone Vertical.png" alt="рисунок iPhone" class="phone-vertical" id="img">
+        <img src="assets/iPhone Horizontal.png" alt="рисунок iPhone" class="phone-horizontal" id="img">
         </div>
-        <button class="slider-button slider-button-right"></button>
+        <div class="item-slider" >
+            <img src="assets/adam.png" alt="der">
+            </div>
+        
+       
+        <button class="slider-button slider-button-right" id="button-right"></button>
     </div>
-    <section class="our-services">
+    <section class="our-services" id="services">
         <h2 class="our-services-h2">Our Services</h2>
         <p class="our-services-text">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
         <div class="info">
@@ -56,18 +61,18 @@
             </div>
         </div>
     </section>
-    <div class="content-container">
+    <div class="content-container" id="portfolio">
         <div class="portfolio-container">
             <h2 class="portfolio-title">Portfolio</h2>
             <p class="portfolio-text">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia
                 odio sem nec elit.</p>
-            <div>
-                <button class="portfolio-button">all</button>
-                <button class="portfolio-button">Web design</button>
-                <button class="portfolio-button">Graphic design</button>
-                <button class="portfolio-button">Artwork</button>
+            <div id="buttons-portfolio">
+                <button class="portfolio-button" id="portfolio__buttons">all</button>
+                <button class="portfolio-button" id="portfolio__buttons">Web design</button>
+                <button class="portfolio-button" id="portfolio__buttons">Graphic design</button>
+                <button class="portfolio-button" id="portfolio__buttons">Artwork</button>
             </div>
-               <div class="portfolio-item">
+               <div class="portfolio-item" id="portfolio-item">
                 <img class="portfolio-image" src="assets/image1.png" alt="image">
                 <img class="portfolio-image" src="assets/image2.png" alt="image">
                 <img class="portfolio-image" src="assets/image3.png" alt="image">
@@ -83,7 +88,7 @@
                </div>
         </div>
     </div>
-    <div class="about">
+    <div class="about" id="about">
         <div class="portfolio-container">
             <h2 class="portfolio-title">About Us</h2>
                <P class="about-text">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum.
@@ -138,16 +143,24 @@
                 <h2 class="get-title">Get Quote</h2>
                 <p class="get-text">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
               <div class="get-form">
-                <form action="#save" method="post">
-                    <input class="get-input" type="text" name="name" id="get-name" required placeholder="Name (Required)">
-                    <input class="get-input" type="text" name="email" id="get-email" required placeholder="Email (Required)"pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
-                    <input class="get-input" type="text" name="subject" id="get-subject" placeholder="Subject">
-                    <textarea class="get-area" name="" id="" cols="30" rows="10" placeholder="Describe your project in detail... "></textarea>
-                    <input class="get-submit" type="submit">
+                <form action="#save" method="post" id="form">
+                    <input class="get-input" type="text" name="name" id="name" required placeholder="Name (Required)">
+                    <input class="get-input" type="text" name="email" id="email" required placeholder="Email (Required)"pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+                    <input class="get-input" type="text" name="subject" id="text" placeholder="Subject">
+                    <textarea class="get-area" name="" id="descr" cols="30" rows="10" placeholder="Describe your project in detail... "></textarea>
+                    <input class="get-submit" type="submit" id="btn">
                 </form>
               </div>
+              <div class="modal-hidden" id="modal-form">
+                <div class="message">
+                    <p class="modal-header">Письмо отправлено</p>
+                    <p id="modal-subject" class="madal-text"></p>
+                    <p id="modal-message" class="modal-text"></p>
+                    <button id="btn-close" class="modal-btn">OK</button>
+                </div>  
+              </div>
               <div>
-        <h3 class="contact-title">Contact Information </h3>
+        <h3 class="contact-title" id="contact">Contact Information </h3>
         <p class="contact-text">Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh. Fusce vitae aliquam tellus. Proin sit amet volutpat libero. Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis.</p>
      
               </div>
@@ -170,6 +183,6 @@
     </div>    
     </footer>
 
-        
+        <script src="script.js"></script>
 </body>
 </html>
