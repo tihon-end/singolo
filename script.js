@@ -6,13 +6,7 @@ menu.addEventListener('click', (event)=>{
     event.target.classList.add('active')
 })
 
-let button= document.getElementById('btn')
 
-button.addEventListener('click', ()=>{
-    let subject= document.getElementById('get-name').value
-    document.getElementById('result').innerText = subject
-    document.getElementById('message-block').classList.remove('hidden')
-})
 
 
 // slider
